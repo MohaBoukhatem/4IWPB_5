@@ -535,13 +535,7 @@ hr {
     height: 2rem;
     width: 45px;
     padding: 5px 10px;
-}
-
-.social img:nth-child(n+2) {
-    filter: invert(92%) sepia(100%) saturate(0) hue-rotate(202deg) brightness(106%) contrast(106%);
-}
-.profile{
-    filter: invert(92%) sepia(100%) saturate(0) hue-rotate(202deg) brightness(106%) contrast(106%);
+    border-radius: 80%;
 }
 
 .navbar2 {
@@ -666,9 +660,7 @@ hr {
     object-fit: cover;
     transition: all .2s ease-in-out;
 }
-.priciple_article img:hover{
-    transform: scale(1.1); 
-}
+                
 .sub_articles{
     display: flex;
     flex-direction: column;
@@ -1112,9 +1104,9 @@ hr {
 
 
 @media(min-width: 992px) {
-    main {
+    main .main-container-left{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
