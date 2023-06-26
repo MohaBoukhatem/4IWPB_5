@@ -105,17 +105,17 @@ body {
     margin-top: 5px;
 }
 
-.form .input-box {
+.form .sub-component {
     width: 100%;
     margin-top: 20px;
 }
 
-.input-box label {
+.sub-component label {
     color: black;
     font-weight: bold;
 }
 
-.form :where(.input-box input, .select-box) {
+.form :where(.sub-component input, .select-box) {
     position: relative;
     height: 40px;
     width: 100%;
@@ -131,16 +131,17 @@ body {
 
 }
 
-.input-box input:focus {
+.sub-component input:focus {
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.form .column {
+.form .component {
     display: flex;
     column-gap: 15px;
     display: flex;
     justify-content: space-between;
 }
+
 
 .select-box select {
     height: 100%;
@@ -189,7 +190,7 @@ body {
 
 /*Responsive*/
 @media screen and (max-width: 500px) {
-    .form .column {
+    .form .component {
         flex-wrap: wrap;
     }
 
@@ -228,7 +229,7 @@ hr {
     background-color: #003d60;
 }
 
-.bottom_head {
+.sub-head-1 {
     display: flex;
     align-items: center;
     background-color: #003d60;
@@ -451,7 +452,7 @@ hr {
 
 
 
-.footer .box-container {
+footer .sub-footer {
     max-width: 1284px;
 }
 
@@ -625,7 +626,7 @@ main a:hover {
 }
 
 
-.footer {
+footer {
     padding: 0 9%;
     max-width: 1440px; 
     margin: auto;
@@ -675,7 +676,7 @@ main a:hover {
     margin-top: 5px;
 }
 
-.footer .box-container {
+footer .sub-footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -684,17 +685,17 @@ main a:hover {
 
 }
 
-.footer .box-container .box h3::first-letter {
+footer .sub-footer .child h3::first-letter {
     text-transform: capitalize;
 }
 
-.footer .box-container .box h3 {
+footer .sub-footer .child h3 {
     font-size: 14px;
     padding: 10px 0;
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.footer .box-container .box a {
+footer .sub-footer .child a {
     display: block;
     padding: 10px 0;
     letter-spacing: -0.472px;
@@ -704,16 +705,16 @@ main a:hover {
     font-family: 'Montserrat', Arial, sans-serif;
 }
 
-.footer .box-container .box a::first-letter {
+footer .sub-footer .child a::first-letter {
     text-transform: capitalize;
 }
 
-.footer .box-container .box a:hover {
+footer .sub-footer .child a:hover {
     color: rgb(114 177 214);
     transition: .3s;
 }
 
-.footer .credit {
+footer .credit {
     text-align: center;
     border-top: .1rem solid rgba(0, 0, 0, .1);
     font-size: 2rem;
